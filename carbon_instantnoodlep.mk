@@ -27,6 +27,11 @@ $(call inherit-product, vendor/carbon/config/gsm.mk)
 # Inherit Carbon product configuration
 $(call inherit-product, vendor/carbon/config/common.mk)
 
+TARGET_INCLUDE_WIFI_EXT := true
+
+# Customization
+$(call inherit-product, vendor/google-customization/config.mk)
+
 PRODUCT_NAME := carbon_instantnoodlep
 PRODUCT_DEVICE := instantnoodlep
 PRODUCT_MANUFACTURER := OnePlus
